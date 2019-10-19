@@ -1,0 +1,18 @@
+/* Reset rule */
+*, 
+*::before, 
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+    background-color: #111111;
+    color: antiquewhite;
+}
+
+header h1{
+    font-size: 50px;
+    margin-top: 40px;
+    text-align: center;
+}
