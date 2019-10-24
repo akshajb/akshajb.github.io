@@ -1,3 +1,14 @@
+
+const $arrow = document.querySelector('.arrow');
+$('.icon').hover(()=>{
+    $arrow.animate([
+        {left: '0'},
+        {left: '10px'},
+        {left: '0'}
+      ],{
+        duration: 700
+      });
+})
 $('input').focus(()=>{
     $('.label-name span').animate({
        height : "40px",
