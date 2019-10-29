@@ -15,26 +15,30 @@
           </div>
     </header>
     <main>
-        <div class="input section">
-            <label for="label" class="label-name">
-                <span>Pokemon</span>
-            </label>
-            <input type="text" id="pokeID" spellcheck="false">
-        </div>
-        <div class="suggestions section"></div>
-
-        <div class="pokeInfo section">
-            <div class="pokehead">    
+        <section class='search'>
+            <div class="input">
+                <label for="label" class="label-name">
+                    <span>Search Your Pokemon</span>
+                </label>
+                <input type="text" id="pokeID" spellcheck="false">
             </div>
-            <div class="pokecontent">
-                <div  class="pokeImage">
-                    <img src="" alt="pokeImage">
-                </div>
-                <p class="type">Type : </p>
-                <p>Abilities : </p>
-                <ol class="ability"></ol>
+            <div class="suggestions"></div>
+        </section>
+        <section class="pokeInfo">
+            <div>
+                    <div class="pokehead">    
+                    </div>
+                    <div class="pokecontent">
+                        <div  class="pokeImage">
+                            <img src="" alt="pokeImage">
+                        </div>
+                        <p class="type">Type : </p>
+                        <p>Abilities : </p>
+                        <ol class="ability"></ol>
+                    </div>
             </div>
-        </div>
+        </section>
+        
     </main>
     <footer>
     </footer>

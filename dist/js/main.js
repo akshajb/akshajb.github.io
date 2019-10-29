@@ -29,7 +29,7 @@ $(document).ready(function(){
     }) 
 
     $('.suggestions').click((e)=>{
-        $('.section').fadeOut();
+        $('section').fadeOut();
         var name = $(e.target).html();
         const golduck = P.getPokemonByName(name).then((response)=>{
             var imageURI = response.sprites.front_default;
@@ -52,9 +52,10 @@ $(document).ready(function(){
     })
 
     $('.back').click((e)=>{
-        $(e.target).fadeOut();
-        $('.section').fadeOut();
-        $('.input').fadeIn();
+        $('.back').fadeOut()
+        $('section').fadeOut(function(){
+            $('.search').fadeIn();
+        });
     })
 })
 
